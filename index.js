@@ -4,7 +4,7 @@ let currentDate = new Date();
 let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 
 
-//Todo: Add figures and make the Custom logger better
+//Todo: Add figures and make the Custom logger better, it will also have a seperator function. So you can change the seperator (defualt will be empty, first version will have figures.triangleRight): [time] [icon] [type] [seperator] [data]
 class Logger {
         this.log = async function(data, type) {
             if (type === null) { await console.log(chalk.gray("[" + time + "]"), chalk.gray("[") + chalk.gray.bold("log") + chalk.gray("]"), chalk.gray(data)) } else {
